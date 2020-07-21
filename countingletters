@@ -1,0 +1,8 @@
+name = input("Please enter the string : ")
+counts = dict()
+for letter in name :
+    counts[letter] = counts.get(letter, 0) + 1
+
+counts = sorted(counts.items())
+for h,t in counts:
+    print(h,"=","%02d" % t)
